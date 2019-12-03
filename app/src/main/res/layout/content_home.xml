@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_home">
+
+
+    <!--<EditText-->
+    <!--android:layout_width="250dp"-->
+    <!--android:hint="Search nearby place"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/placeText" />-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <AutoCompleteTextView
+            android:id="@+id/actPlaceSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="0.9"
+            android:ems="10"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:hint="Search Place type. (Eg. atm)">
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <ImageButton
+            android:id="@+id/ibtnFind"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.1"
+            android:tint="@color/white"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_search"
+            />
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout" />
+    <!-- Content Container -->
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+    <!--android:id="@+id/bottom_navigation"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_gravity="start"-->
+    <!--app:itemBackground="@color/white"-->
+    <!--app:itemIconTint="@drawable/nav_item_color_state"-->
+    <!--app:itemTextColor="@drawable/nav_item_color_state"-->
+    <!--app:menu="@menu/bottom_navigation_main" />-->
+</RelativeLayout>

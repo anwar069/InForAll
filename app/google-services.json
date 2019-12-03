@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "190429945749",
+    "firebase_url": "https://inforall-185719.firebaseio.com",
+    "project_id": "inforall-185719",
+    "storage_bucket": "inforall-185719.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190429945749:android:cb11564e4b1a5af2",
+        "android_client_info": {
+          "package_name": "com.inforall.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190429945749-fu3mibheb5aqdrr0cgeqs63g7dpbrvfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inforall.app",
+            "certificate_hash": "42ae70eeea6bfbafeefda884049acfa1d6b64160"
+          }
+        },
+        {
+          "client_id": "190429945749-d34gkqa59u03pkg6q26em8m1dhvdq3o1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inforall.app",
+            "certificate_hash": "cb37cedde63c0b4b3dde41b16489602e68d2b165"
+          }
+        },
+        {
+          "client_id": "190429945749-v2oua2chmbiv00k4on2uv5af536e4c2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAWogIn7sjWZ2cx03pW0JETL1431fwP4c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190429945749-v2oua2chmbiv00k4on2uv5af536e4c2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,446 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/search_back" />
+
+        <ImageView
+            android:id="@+id/iv_place_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-45dp"
+            android:background="@drawable/profile_circular_border_imageview"
+            android:elevation="5dp"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/face" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_add_contact"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="26dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:clickable="true"-->
+            <!--android:src="@drawable/ic_add_contact" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_add_contact"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:layout_toLeftOf="@+id/drop_down_option_menu"-->
+            <!--android:src="@drawable/ic_add_contact" />-->
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_block_contact"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_toLeftOf="@+id/iv_sms"-->
+            <!--android:layout_marginRight="26dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:clickable="true"-->
+            <!--android:src="@drawable/ic_add_block" />-->
+
+
+            <!--  <ImageView
+                  android:id="@+id/iv_sms"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="26dp"
+                  android:layout_marginTop="16dp"
+                  android:clickable="true"
+                  android:src="@drawable/ic_sms" />-->
+
+            <TextView
+                android:id="@+id/tv_place_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:padding="5dp"
+                android:text="Ahmed Anwar"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_place_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:padding="5dp"
+                android:text="Address Not Available"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white"
+                android:layout_below="@+id/tv_place_name" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_user_profile_short_bio"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/tv_user_profile_name"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:text="Android free tutorials and example"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="14sp" />-->
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/colorAccent">
+                        </View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_place_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp" />
+
+                            <!--<ImageView-->
+                                <!--android:id="@+id/iv_call_contact"-->
+                                <!--android:layout_width="25dp"-->
+                                <!--android:layout_height="25dp"-->
+                                <!--android:layout_marginTop="5dp"-->
+                                <!--android:layout_toRightOf="@+id/tv_place_rate"-->
+                                <!--android:backgroundTint="@color/colorPrimary"-->
+                                <!--android:clickable="true"-->
+                                <!--android:src="@drawable/ic_place_star"-->
+                                <!--android:tint="@color/colorPrimary" />-->
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rating"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/colorAccent">
+
+                        </View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_place_dist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="50.8 km"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <Button
+                        android:id="@+id/btnCall"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_weight="5"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableRight="@drawable/ic_call_contact"
+                        android:text="Call"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp" />
+                    <Button
+                        android:id="@+id/btnDirection"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="3"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableRight="@drawable/ic_direction_white"
+                        android:text="Go"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorAccent"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/tvMyRating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-5dp"
+                        android:gravity="center"
+                        android:text="My Rating"
+                        android:textColor="@color/bg_screen2"
+                        android:textSize="25sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <RatingBar
+                            android:id="@+id/rb_place_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:stepSize="1"
+
+                            />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btn_rate_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/bg_screen2"
+                        android:text="Rate Now"
+                        android:textColor="#ffffff"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_login_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:drawableLeft="@drawable/common_google_signin_btn_icon_light_pressed"
+                        android:text="  Login in to Rate !! "
+                        android:textColor="#ffffff"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="10">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:padding="20dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/ic_card_location" />-->
+
+            <!---->
+            <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--  <android.support.v7.widget.CardView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:weightSum="10">
+
+                      <ImageView
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="2"
+                          android:padding="20dp"
+                          android:scaleType="centerCrop"
+                          android:src="@drawable/ic_card_emai" />
+
+                      <TextView
+                          android:id="@+id/tv_user_profile_email"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="8"
+                          android:background="#fff"
+                          android:clickable="true"
+                          android:elevation="4dp"
+                          android:padding="20dp"
+                          android:text=""
+                          android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                  </LinearLayout>
+              </android.support.v7.widget.CardView>-->
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
